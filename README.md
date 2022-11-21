@@ -1,3 +1,32 @@
+# NextJS Smart Contract Lottery - Full Stack / Front End (Free Code Camp)
+We will build a decentralised lottery, with a front end (using NextJS in the React framework), ability to switch between networks (validating and notifying which networks/chain ids will work), where users can click to enter the lottery (and sign the tx), then displaying the most recent winner; both the backend and frontend will be hosted via a decentralised technology
+-   
+
+## Project process:
+(1) Run "yarn create next-app ." to build out the main boilerplate files for the project (then deleted .eslintrc.json)
+
+## Other notes:
+-   For more info on NextJS, study from the (Next.js crash course)[https://www.youtube.com/watch?v=mTz0GXj8NN0]
+-   React:
+    > everything is component-based
+-   pages: the different pages on our site; files in here are .js; this is where we'll mostly be working and creating folders
+-   index.js: our default page
+-   react syntax: used inside our files, jsx, code looks something between javascript and html
+-   _app.js: our entry point for everything; basically contains/runs our whole application; <Component {...pageProbs} /> becomes index.js
+-   api: what we would use for http post requests (not used in this project)
+-   public: public images
+-   styles: css for our project, which is a way of styling our html
+-   next.config.js: configuration file for NextJS  
+-   versions of JS: backend JS is a little different than frontend JS; imports work with front end, while require statements do not
+
+## Commands:
+-   yarn run dev -- starts a server and runs our app; click on the provided url (example: localhost:3000) to see site
+
+## Fixing errors:
+-   
+
+## vv DEFAULT NOTES vv
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
