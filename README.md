@@ -4,11 +4,18 @@ We will build a decentralised lottery, with a front end (using NextJS in the Rea
 
 ## Project process:
 (1) Run "yarn create next-app ." to build out the main boilerplate files for the project (then deleted .eslintrc.json)
+(2) Remove everything from the default index.js except the head, start preparing the page for our needed parts
+(3) Create a connect button - make it detect when we change networks, users, etc
+-   When creating components, make them some_name.jsx (see Header.jsx), then make sure to add them to _app.js or index.js (which one?)
+-   If using moralis, run "yarn add react react-dom moralis react-moralis moralis-v1" (this is not --dev because we will actually need moralis for the live project to run properly)
+-   If using web3uikit, make sure to "yarn add web3uikit"
 
 ## Other notes:
 -   For more info on NextJS, study from the (Next.js crash course)[https://www.youtube.com/watch?v=mTz0GXj8NN0]
 -   React:
-    > everything is component-based
+    > everything is (component-based)[https://www.w3schools.com/react/react_components.asp]; components are independent and reusable bits of code, like functions that return HTML elements
+    > (hooks)[https://reactjs.org/docs/hooks-overview.html#:~:text=Hooks%20are%20functions%20that%20let,if%20you%27d%20like.)]: "Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed."
+        - This is useful in that we want our app to re-render if the state changes, to show different buttons/components depending on what's happening (which will not happen with raw JS)
 -   pages: the different pages on our site; files in here are .js; this is where we'll mostly be working and creating folders
 -   index.js: our default page
 -   react syntax: used inside our files, jsx, code looks something between javascript and html
@@ -18,12 +25,14 @@ We will build a decentralised lottery, with a front end (using NextJS in the Rea
 -   styles: css for our project, which is a way of styling our html
 -   next.config.js: configuration file for NextJS  
 -   versions of JS: backend JS is a little different than frontend JS; imports work with front end, while require statements do not
+-   moralis: a library, has additional plugins, can hook into backend to provide even more functionality
+-   JS inside HTML: to write Javascript inside of HTML, just use {} and place JS inside
 
 ## Commands:
 -   yarn dev OR yarn run dev -- starts a server and runs our app; click on the provided url (example: localhost:3000) to see site
 
 ## Fixing errors:
--   
+-   If there is an error from module not found, just yarn add it by name
 
 ## vv DEFAULT NOTES vv
 
