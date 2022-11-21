@@ -20,7 +20,7 @@ We will build a decentralised lottery, with a front end (using NextJS in the Rea
 -   versions of JS: backend JS is a little different than frontend JS; imports work with front end, while require statements do not
 
 ## Commands:
--   yarn run dev -- starts a server and runs our app; click on the provided url (example: localhost:3000) to see site
+-   yarn dev OR yarn run dev -- starts a server and runs our app; click on the provided url (example: localhost:3000) to see site
 
 ## Fixing errors:
 -   
